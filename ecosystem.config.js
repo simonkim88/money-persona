@@ -11,6 +11,7 @@ module.exports = {
             script: "npm",
             args: "start",
             cwd: "./frontend",
+            interpreter: "none",
             env: {
                 PORT: 3000,
                 NODE_ENV: "production"
