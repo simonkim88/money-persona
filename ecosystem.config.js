@@ -8,10 +8,9 @@ module.exports = {
         },
         {
             name: "mp-frontend",
-            script: "npm.cmd",
+            script: "node_modules/next/dist/bin/next",
             args: "start",
             cwd: "./frontend",
-            interpreter: "none",
             env: {
                 PORT: 3000,
                 NODE_ENV: "production"
