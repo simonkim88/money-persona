@@ -8,7 +8,7 @@ module.exports = {
         },
         {
             name: "mp-frontend",
-            script: "node_modules/next/dist/bin/next",
+            script: "./frontend/node_modules/next/dist/bin/next",
             args: "start",
             cwd: "./frontend",
             env: {
