@@ -14,7 +14,9 @@ import { calculatePersona } from "@/lib/persona-logic";
 import { useSearchParams } from "next/navigation";
 // ... imports
 
-export default function QuizPage() {
+import { Suspense } from "react";
+
+function QuizContent() {
     const router = useRouter();
     const searchParams = useSearchParams();
     const { currentQuestionIndex, setAnswer, nextQuestion, scores, resetQuiz } = useQuizStore();
@@ -131,5 +133,17 @@ export default function QuizPage() {
             </div>
 
         </main>
+    );
+}
+
+export default function QuizPage() {
+    return (
+        <Suspense fallback={
+            <div className="min-h-screen flex items-center justify-center bg-[#F5F5F7]">
+                <Loader2 className="w-8 h-8 text-blue-600 animate-spin" />
+            </div>
+        }>
+            <QuizContent />
+        </Suspense>
     );
 }
