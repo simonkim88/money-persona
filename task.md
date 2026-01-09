@@ -1,0 +1,11 @@
+- [x] Backend Implementation (FastAPI + PostgreSQL + LangChain) <!-- id: 3 -->
+    - [x] Setup FastAPI Project with **LangChain** & **pgvector** <!-- id: 4 -->
+    - [x] Implement Database Models (Users, Personas, Chat, Gamification) <!-- id: 5 -->
+    - [x] Create API for Quiz, **Auth (OAuth)**, and **Levelling System** <!-- id: 6 -->
+    - [x] \bImplement RAG Chatbot Endpoint ("Dr. Ryu") <!-- id: 6.1 -->
+- [ ] Frontend Implementation (Next.js + Tailwind + Framer Motion) <!-- id: 7 -->
+    - [x] Setup Next.js with **Framer Motion** <!-- id: 8 -->
+    - [/] Implement **3D Hero Section** & Apple-style UI <!-- id: 9 -->
+    - [x] Build **Story-based Quiz Interface** (12 Questions) <!-- id: 10 -->
+    - [x] Build **Mission Dashboard** & Result Page with **Radar Chart** <!-- id: 11 -->
+    - [x] Integrate Social Sharing & Login <!-- id: 11.1 -->
